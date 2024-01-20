@@ -1,0 +1,309 @@
+/* Common shared styles */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.primary_text {
+  color: #fd6e0a;
+}
+.primary_button {
+  border-radius: 5px;
+  background: #fd6e0a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+}
+.section_title {
+  color: var(--Dark-01, #181818);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.section_description {
+  color: var(--Dark-03, #757575);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* nav part design */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+  min-width: 550px;
+}
+
+.nav_title {
+  color: var(--Dark-01, #181818);
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.extra_style {
+  color: #fd6e0a;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--Dark-02, #474747);
+}
+
+/* Header related styles */
+
+.header {
+  background-color: #fff8f3;
+  background-image: url("../Images/header_bg.png"),
+    url("../Images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
+}
+
+.banner {
+  padding: 30px 30px 0px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile_picture {
+  width: 500px;
+}
+
+.banner_greeting {
+  color: var(--Dark-02, #474747);
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.banner_heading {
+  color: var(--Dark-01, #181818);
+  font-size: 85px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.banner_description {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--Dark-03, #757575);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner_content {
+  max-width: 585px;
+}
+
+/*Main section style*/
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* About section styles */
+.about {
+  margin: 120px 0;
+  padding: 130px;
+  border-radius: 10px;
+  background: #fff8f3;
+}
+
+.about_info_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aobut_info {
+  text-align: center;
+}
+
+.info_title {
+  color: var(--Dark-03, #757575);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 0;
+  margin-bottom: 0;
+}
+
+.info_description {
+  color: var(--Dark-02, #474747);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0;
+  margin-bottom: 0 0;
+}
+
+.what_i_do {
+  padding: 10px 130px;
+}
+
+/* What I do section */
+
+.skills_container {
+  display: flex;
+}
+
+.skills {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin: 50px 0;
+}
+
+/* Summary section */
+
+.summary_container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.resume_column_title {
+  color: var(--Dark-02, #474747);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.resume_title {
+  color: var(--Dark-02, #474747);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.resume_subtitle {
+  color: var(--Dark-03, #757575);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.resume_body {
+  color: var(--Dark-03, #757575);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.download_button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Footer section started */
+
+footer {
+  margin-top: 100px;
+  background: #fff8f3;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 130px 260px;
+}
+
+.section_title {
+  color: var(--Dark-01, #181818);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+.section_description {
+  color: var(--Dark-02, #474747);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer_column {
+  width: 50%;
+}
+
+.contact input,
+textarea {
+  display: block;
+  margin-bottom: 25px;
+  padding: 18px 35px;
+  color: var(--Dark-03, #757575);
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  background: var(--White-Color, #fff);
+  border: none;
+  width: 100%;
+}
+
+.social_links a {
+  margin-right: 25px;
+}
+
+/* Responsive for various devices */
+
+/* responsive for mobile devices */
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    padding: 0;
+    min-width: auto;
+  }
+  nav > ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .banner {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .banner_content {
+    align-items: center;
+    text-align: center;
+  }
+  .profile_picture {
+    padding: 15px 0 0 0;
+    width: 100%;
+  }
+
+  .about {
+    margin: 20px 0;
+    padding: 20px;
+  }
+  .skills_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills {
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .what_i_do {
+    padding: 10px;
+  }
+  .about_info_container {
+    flex-direction: column;
+  }
+  .about {
+    padding: 10px;
+  }
+  .summary_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+}
